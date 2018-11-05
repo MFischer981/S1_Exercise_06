@@ -15,7 +15,30 @@
 
 
 /* Transformation Styles */
+article {
+    perspective: 600px;
+}
 
+figure#figure1 {
+    transform: rotateX(30deg) rotateZ(50px);
+}
 
+figure#figure2 {
+    transform: rotate(-40deg) scale(.8, .8) translate(20px, -100px) rotateZ(30deg) rotateY(60deg);
+    box-shadow: rgb(101, 101, 101) 10px 10px 25px;
+}
+
+figure#figure3 {
+    transform: rotate(10deg) scale(.9, .9) translateY(-120px);
+    box-shadow: rgb(101, 101, 101) 10px -10px 25px;
+}
 
 /* Filter Styles */
+
+figure#figure1 {
+    filter: sepia(.8);
+}
+
+figure#figure2 {
+    filter: grayscale(1);
+}
